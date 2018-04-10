@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+        * Palíndromo
+        * 
+        * @param str a string a ser verificada
+        * 
+        * @example
+        * 
+        * isPalindrome("10:01")
+        * // true
+        * 
+        * isPalindrome("Matheus")
+        * // false
+        */
+        function isPalindrome(str) {
+            var strReverso = "";
+            for (let i = str.length - 1; i >= 0; i--) {
+                strReverso += str[i];
+            }
+            console.log(strReverso);
+            if (str === strReverso) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
